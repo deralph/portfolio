@@ -19,21 +19,12 @@ const Hero = () => {
             Hi, I'm <span className="text-[#915EFF]">Raphael</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 mb-6 text-white-100`}>
-            I am an AI Specialist and I develop Softwares,{" "}
+            I am an AI Specialist and I develop Software,{" "}
             <br className="sm:block hidden" />
             user interfaces and web applications
           </p>
-
-          <a
-            href="/Raphael_John_Resume.pdf" // Update with your resume file path
-            download="Raphael_John_Resume.pdf" // The file will be saved as "My_Resume.pdf"
-            className="bg-[#915EFF] text-xl hover:bg-purple-700 text-white font-bold py-2 px-6 rounded-full shadow-lg transition duration-300 ease-in-out"
-          >
-            Download Resume
-          </a>
         </div>
       </div>
-
       <ComputersCanvas />
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">

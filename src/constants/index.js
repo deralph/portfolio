@@ -71,14 +71,14 @@ const services = [
 ];
 
 const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
+  // {
+  //   name: "HTML 5",
+  //   icon: html,
+  // },
+  // {
+  //   name: "CSS 3",
+  //   icon: css,
+  // },
   {
     name: "JavaScript",
     icon: javascript,
@@ -91,10 +91,10 @@ const technologies = [
     name: "React JS",
     icon: reactjs,
   },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
+  // {
+  //   name: "Redux Toolkit",
+  //   icon: redux,
+  // },
   {
     name: "Tailwind CSS",
     icon: tailwind,
@@ -107,10 +107,10 @@ const technologies = [
     name: "MongoDB",
     icon: mongodb,
   },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
+  // {
+  //   name: "Three JS",
+  //   icon: threejs,
+  // },
   {
     name: "git",
     icon: git,
@@ -131,22 +131,22 @@ const technologies = [
     name: "NumPy",
     icon: NumPy,
   },
-  // {
-  //   name: "PyTorch",
-  //   icon: PyTorch,
-  // },
-  // {
-  //   name: "TensorFlow",
-  //   icon: TensorFlow,
-  // },
-  // {
-  //   name: "Scikit-learn",
-  //   icon: scikitLearn,
-  // },
-  // {
-  //   name: "Jupyter",
-  //   icon: Jupyter,
-  // },
+  {
+    name: "PyTorch",
+    icon: PyTorch,
+  },
+  {
+    name: "TensorFlow",
+    icon: TensorFlow,
+  },
+  {
+    name: "Scikit-learn",
+    icon: scikitLearn,
+  },
+  {
+    name: "Jupyter",
+    icon: Jupyter,
+  },
 ];
 
 const experiences = [

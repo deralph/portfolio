@@ -53,18 +53,33 @@ const SocialLinks = ({ siteConfig }) => {
   const mailBody = encodeURIComponent(
     "Hi Raphael,\n\nI am [Your Name] from [Your Company/Portfolio]. I would like to discuss opportunities and collaboration. Please let me know how we can proceed.\n\nBest regards,\n[Your Name]  \n\n please feel free to edit this template"
   );
+  const handleViewAndDownload = () => {
+    const resumeUrl = "/Raphael_John_Resume.pdf"; // Ensure the file is in "public" folder
+
+    // Open in new tab
+    window.open(resumeUrl, "_blank");
+
+    // Trigger download
+    const link = document.createElement("a");
+    link.href = resumeUrl;
+    link.setAttribute("download", "Raphael_John_Resume.pdf");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <>
       {/* Mail Button */}
       <div className="flex flex-wrap gap-3 mt-12  justify-center">
         <a
-          href={`mailto:jraphael441@gmail.com?subject=${mailSubject}&body=${mailBody}`}
-          target="_blank"
-          rel="noopener noreferrer"
+          // href={`mailto:jraphael441@gmail.com?subject=${mailSubject}&body=${mailBody}`}
+          // target="_blank"
+          // rel="noopener noreferrer"
+          onClick={handleViewAndDownload}
           className="flex items-center gap-2 border p-4"
         >
-          Drop me a digital pigeon!
+          View Resume
         </a>
       </div>
 
@@ -106,6 +121,15 @@ const SocialLinks = ({ siteConfig }) => {
           <TikTokIcon />
         </a>
       </div>
+      {/* <a
+        href="/Raphael_John_Resume.pdf" // Update with your resume file path
+        // download="Raphael_John_Resume.pdf" // The file will be saved as "My_Resume.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-[#915EFF] text-xl hover:bg-purple-700 text-white font-bold py-2 px-6 rounded-full shadow-lg transition duration-300 ease-in-out"
+      >
+        Download Resume
+      </a> */}
     </>
   );
 };

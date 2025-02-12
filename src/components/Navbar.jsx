@@ -24,6 +24,20 @@ const Navbar = () => {
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+  const handleViewAndDownload = () => {
+    const resumeUrl = "/Raphael_John_Resume.pdf"; // Ensure the file is in "public" folder
+
+    // Open in new tab
+    window.open(resumeUrl, "_blank");
+
+    // Trigger download
+    const link = document.createElement("a");
+    link.href = resumeUrl;
+    link.setAttribute("download", "Raphael_John_Resume.pdf");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <nav
@@ -49,7 +63,17 @@ const Navbar = () => {
           </p>
         </Link>
 
-        <ul className="list-none hidden sm:flex flex-row gap-10">
+        <ul className="list-none hidden items-center sm:flex flex-row gap-10">
+          {" "}
+          <li>
+            {" "}
+            <a
+              onClick={handleViewAndDownload}
+              className="flex items-center gap-2 border p-4"
+            >
+              View Resume
+            </a>
+          </li>
           {navLinks.map((nav) => (
             <li
               key={nav.id}
@@ -77,6 +101,15 @@ const Navbar = () => {
             } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
           >
             <ul className="list-none flex justify-end items-start flex-1 flex-col gap-4">
+              <li>
+                {" "}
+                <a
+                  onClick={handleViewAndDownload}
+                  className="flex items-center gap-2 border p-4"
+                >
+                  View Resume
+                </a>
+              </li>
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
