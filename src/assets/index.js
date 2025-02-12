@@ -1,4 +1,5 @@
-import logo from "./logo.svg";
+// import logo from "../../public/logo.jpg";
+import logo from "./logo.jpg";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -19,16 +20,18 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
+import NumPy from "./tech/NumPy.png";
+import Jupyter from "./tech/Jupyter.png";
+import scikitLearn from "./tech/scikit-learn.png";
+import PyTorch from "./tech/PyTorch.png";
+import TensorFlow from "./tech/TensorFlow.png";
+import Pandas from "./tech/Pandas.png";
 import threejs from "./tech/threejs.svg";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
-
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import gns from "./gns.jpg";
+import neobot from "./neobot.jpg";
+import pdfAssistant from "./pdfAssistant.png";
+import expensedTracked from "./expensedTracked.png";
 
 export {
   logo,
@@ -52,11 +55,14 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
+  Jupyter,
+  NumPy,
+  Pandas,
+  PyTorch,
+  TensorFlow,
+  scikitLearn,
+  gns,
+  expensedTracked,
+  pdfAssistant,
+  neobot,
 };
